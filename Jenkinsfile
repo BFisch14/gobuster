@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        GO11MODULE = 'on'
-        GOROOT = '${root}'
-    }
-
     stages {
         stage('Compile') {
             steps {
