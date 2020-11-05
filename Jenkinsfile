@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Release') {
             environment {
-                GITHUB_TOKEN = credentials('github-token')
+                GITHUB_TOKEN = credentials('go-release-sample')
             }
             steps {
                 sh 'curl -sL https://git.io/goreleaser | sh'
